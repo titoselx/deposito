@@ -22,5 +22,13 @@ public class DepositoCombustibleTest {
 		assertSame(40.0,test);
 		
 	}
+	public void testFill() {
+		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
+		tank.fill(10.0);
+		
+		assertSame(10.0,tank.getDepositoNivel());
+		assertNotSame(0.0, tank.getDepositoNivel());
+
+	}
 
 }
