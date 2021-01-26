@@ -9,7 +9,7 @@ public class DepositoCombustibleTest {
 		DepositoCombustible tank = new DepositoCombustible(40.0,0.0);
 		double test = tank.getDepositoNivel();
 		
-		assertSame(tank.getDepositoNivel(),test);
+		assertSame(0.0,test);
 		
 	}
 
